@@ -4,6 +4,6 @@ KDD 2019 paper "Isolation Set-Kernel and Its Application to Multi-Instance Learn
 
 KDD 2020 paper "Isolation Distributional Kernel: A New Tool for Kernel based Anomaly Detection"
 
-AAAI 2020 paper "Isolation Graph Kernel"
+AAAI 2021 paper "Isolation Graph Kernel"
 
 Non-Commercial Use License.
