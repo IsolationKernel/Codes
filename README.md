@@ -1,5 +1,5 @@
-Isolation Kernel Software
-=========================
+Isolation Kernel
+================
 
 Isolation Kernel (IK) is first introduced as an alternative to existing data independent kernels such as Gaussian and Laplacian kernels. IK has the following distinctive features:
 
