@@ -30,6 +30,9 @@ Note that Isolation Kernel is not one kernel function such as Gaussian kernel, b
 
 The codes provided here are IK [1,2], IDK [5,6], IGK [7] and IK-OGD [4].
 
+
+All these codes are under the Non-Commercial Use License.
+
 References
 ----------
 
@@ -50,7 +53,3 @@ References
 [8] Xin Han, Ye Zhu, Kai Ming Ting, Gang Li (2020). The Impact of Isolation Kernel on Agglomerative Hierarchical Clustering Algorithms. [CoRR abs/2010.05473](https://dblp.org/db/journals/corr/corr2010.html#abs-2010-05473)
 
 [9] Kai Ming Ting, Jonathan R. Wells, Ye Zhu (2020). Clustering based on Point-Set Kernel. [CoRR abs/2002.05815](https://dblp.org/db/journals/corr/corr2002.html#abs-2002-05815)
-
-
-
-All IK related codes are under the Non-Commercial Use License.
