@@ -42,7 +42,7 @@ References
 
 [3] Bi-Cun Xu, Kai Ming Ting, Zhi-Hua Zhou (2019). Isolation Set-Kernel and Its Application to Multi-Instance Learning. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 941-949.
 
-[4] Kai Ming Ting, Jonathan R. Wells, Takashi Washio: Isolation Kernel: The X Factor in Efficient and Effective Large Scale Online Kernel Learning. [CoRR abs/1907.01104 (2019)](https://dblp.uni-trier.de/db/journals/corr/corr1907.html)
+[4] Kai Ming Ting, Jonathan R. Wells, Takashi Washio (2021). Isolation Kernel: The X Factor in Efficient and Effective Large Scale Online Kernel Learning. Data Mining and Knowledge Discovery. 
 
 [5] Kai Ming Ting, Bi-Cun Xu, Washio Takashi, Zhi-Hua Zhou (2020). Isolation Distributional Kernel: A new tool for kernel based anomaly detection. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 198-206.
 
