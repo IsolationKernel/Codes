@@ -1,7 +1,7 @@
 Online Kernel Learning
 ======================
 
-The ODG software was obtained from the following website as a subset (i.e., C++ source code only):
+The OGD software was obtained from the following website as a subset (i.e., C++ source code only):
 
 https://github.com/LIBOL/KOL
 
