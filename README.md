@@ -3,16 +3,16 @@ Isolation Kernel Software
 
 Isolation Kernel (IK) is first introduced as an alternative to existing data independent kernels such as Gaussian and Laplacian kernels. IK has the following distinctive features:
 
-a. IK is derived directly from data and has no closed from expression.
-b. Its kernel similarity is data dependent: two points in sparse region are more similar than two points of equal inter-point distance in dense region.
-c. It has a sparse and finite-dimensional feature map.
+* IK is derived directly from data and has no closed from expression.
+* Its kernel similarity is data dependent: two points in sparse region are more similar than two points of equal inter-point distance in dense region.
+* It has a sparse and finite-dimensional feature map.
 
  
 
 IK's unique feature map (feature III) has led to the following advantages:
 
-a. Enabling efficient dot product and GPU acceleration (if realized using NN methods) [2, 4]
-b. Using Isolation Distribution Kernel (IDK) with kernel mean map, it enables linear time algorithms which would otherwise be impossible---algorithms relying on a point-to-point distance/kernel for their basic operations have at least quadratic time [5, 6, 9]
+* Enabling efficient dot product and GPU acceleration (if realized using NN methods) [2, 4]
+* Using Isolation Distribution Kernel (IDK) with kernel mean map, it enables linear time algorithms which would otherwise be impossible---algorithms relying on a point-to-point distance/kernel for their basic operations have at least quadratic time [5, 6, 9]
 
  
 
