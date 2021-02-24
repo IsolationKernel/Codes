@@ -53,4 +53,4 @@ References
 
 
 
-All software, where applicable, are under the Non-Commercial Use License.
+All IK related codes are under the Non-Commercial Use License.
