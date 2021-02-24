@@ -1,7 +1,7 @@
 Online Kernel Learning
 ======================
 
-This software was obtained from the following website as a subset (i.e., C++ source code only):
+The ODG software was obtained from the following website as a subset (i.e., C++ source code only):
 
 https://github.com/LIBOL/KOL
 
@@ -23,7 +23,7 @@ Online mode:
 * -ik_ol_acc_bk : output the accuracy after 'x' number of blocks
 
 
-Additional Notes
+Additional Note
 ----------------
 
-The original software is rather fragile. For example, if the number of data points within a data file is a multiple of 256, then the program could crash. I haven't attempted to supply any fixes to the original software.
+The original OGD software is rather fragile. For example, if the number of data points within a data file is a multiple of 256, then the program could crash. I haven't attempted to supply any fixes to the original software.
