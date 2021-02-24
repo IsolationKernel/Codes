@@ -51,8 +51,6 @@ References
 
 [9] Kai Ming Ting, Jonathan R. Wells, Ye Zhu (2020). Clustering based on Point-Set Kernel. [CoRR abs/2002.05815](https://dblp.org/db/journals/corr/corr2002.html#abs-2002-05815)
 
-[10] Ye Zhu, Kai Ming Ting (2019) Improving Stochastic Neighbour Embedding fundamentally with a well-defined data-dependent kernel. [CoRR abs/1906.09744](https://dblp.org/db/journals/corr/corr1906.html#abs-1906-09744)
-
 
 
 All software, where applicable, are under the Non-Commercial Use License.
