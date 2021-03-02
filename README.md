@@ -13,7 +13,7 @@ III. It has a sparse and finite-dimensional feature map.
 
 IK's unique feature map (feature III) has led to the following advantages:
 
-* Enabling efficient dot product and GPU acceleration (if realized using NN methods) [2, 4]
+* Enabling efficient dot product and GPU acceleration (if realized using Voronoi diagram) [2, 4]
 * Using Isolation Distribution Kernel (IDK) with kernel mean map, it enables linear time algorithms which would otherwise be impossible---algorithms relying on a point-to-point distance/kernel for their basic operations have at least quadratic time [5, 6, 9]
 
  
