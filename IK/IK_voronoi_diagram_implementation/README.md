@@ -1,4 +1,4 @@
-This script demonstrates how to calculate pairwise similairty based on Isolation Kernel and how to create a Isolation Kernel feature map.
+This script demonstrates how to calculate Isolation Kernel similarity and feature map based on the voronoi diagram.
 
 References
 Qin, X., Ting, K.M., Zhu, Y. and Lee, V.C., 2019, July. Nearest-neighbour-induced isolation similarity and its impact on density-based clustering. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 33, pp. 4755-4762).
