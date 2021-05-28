@@ -1,5 +1,5 @@
 function [ndata] = IKspace (Sdata,data, psi, t)
-% kernel space for data
+% mapping data to Isolation Kernel space 
 % Sdata is used for partition
 
 [sn,~]=size(Sdata);  
@@ -7,17 +7,12 @@ function [ndata] = IKspace (Sdata,data, psi, t)
 ndata=[];
 c=0:psi:(n-1)*psi;
 for i = 1:t 
-      subIndex = datasample(1:sn, psi, 'Replace', false);
-      tdata=Sdata(subIndex,:);    
-%     
- %   tdata=rand(psi,d);
-    
+    subIndex = datasample(1:sn, psi, 'Replace', false);
+    tdata=Sdata(subIndex,:);      
     dis=pdist2(tdata,data);    
     [~, centerIdx] = min(dis);
     z=zeros(psi,n);
     z(centerIdx+c)=1;
-    ndata=[ndata z'];
+    ndata=[ndata z']; 
 end 
-
 end
- 
