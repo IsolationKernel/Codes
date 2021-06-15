@@ -3,7 +3,7 @@ from sklearn.metrics.pairwise import rbf_kernel
 from multiprocessing.pool import Pool
 import sys
 sys.path.append("./")
-from iDK_square.iNNE_IK import *
+from iNNE_IK import *
 from iForest_boost import *
 
 def idk_kernel_map(list_of_distributions, par_mth, psi, t, max_height=10, num_features=5):
