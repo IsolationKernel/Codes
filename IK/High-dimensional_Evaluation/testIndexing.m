@@ -7,7 +7,7 @@ load('wGaussians.mat')
 libsvmwrite('Odata.svm', class(1:size(data,1)), sparse(data)); % Original data
 
 tic
-psi=32;
+psi=32; % best psi should be tuned for different datasets
 t=200;
 [ndata] = IKspace (data,data, psi, t);
 toc
