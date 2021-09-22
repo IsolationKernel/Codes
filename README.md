@@ -1,57 +1,31 @@
-Isolation Kernel
+A brief history of Isolation-based methods
 ================
-
-Isolation Kernel (IK) is first introduced as an alternative to existing data independent kernels such as Gaussian and Laplacian kernels. IK has the following distinctive features:
-
-I. IK is derived directly from data and has no closed from expression.
-
-II. Its kernel similarity is data dependent: two points in sparse region are more similar than two points of equal inter-point distance in dense region.
-
-III. It has a sparse and finite-dimensional feature map.
-
- 
-
-IK's unique feature map (feature III) has led to the following advantages:
-
-* Enabling efficient dot product and GPU acceleration (if realized using Voronoi diagram) [2, 4]
-* Using Isolation Distribution Kernel (IDK) with kernel mean map, it enables linear time algorithms which would otherwise be impossible---algorithms relying on a point-to-point distance/kernel for their basic operations have at least quadratic time [5, 6, 9]
-
- 
-
-IK's data dependency (feature II) has led to improved task-specific performance in the following tasks:
-
-* Classification: SVM [1], SVM multi-instance learning [3], large scale online kernel learning [4]
-* Clustering: DBSCAN [2], psKC [9], Agglomerative Hierarchical Clustering [8]
-* Anomaly detection: point anomalies [5], group anomalies [6]
-* Graph kernel [7]
-
- 
-
-Note that Isolation Kernel is not one kernel function such as Gaussian kernel, but a class of kernels which has different kernel distributions depending on the space partitioning mechanism employed. There are currently three possible implementations: (a) Isolation Forest used in [1,7]; (b) Voronoi diagram used in [2,3,4,8,9]; and (c) hyperspheres used in [5,6].
-
-
-The codes provided here are IK [1,2], IDK [5,6], IGK [7] and IK-OGD [4].
-
-
-All these codes are under the Non-Commercial Use License.
-
+ 
+Isolation-based methods refer to methods that employ an isolation mechanism to construct isolating partitions in the input space. The first method is called Isolation Forest or iForest [1], a point anomaly detector, reported in IEEE ICDM 2008. The intuition is that anomalies are rare and different from normal points; thus each anomaly is more amenable to isolation than normal points. A point is said to be isolated if it is contained within an isolating partition that isolates it from the rest of the points in a sample. 
+ 
+Isolation Forest is one of the most effective and efficient anomaly detectors created thus far. Since its introduction, it has been used widely in academia and industries. Its limitations, due to the use of tree structures, have been studied by different researchers. One improvement beyond tree structures is iNNE [2] which employs hyperspheres as the isolation mechanism.
+ 
+The development of isolation-based methods has grown outside the confines of anomaly detection since. In 2010, Isolation Forest is shown to be a special case of mass estimation [3] (i.e., an alternative to density estimation.)  
+ 
+In 2018, a data dependent kernel called Isolation Kernel [4] or IK is first introduced as an alternative to data independent kernels such as Gaussian and Laplacian kernels. It has a unique characteristic:  two points, as measured by Isolation Kernel derived in a sparse region, are more similar than the same two points, as measured by Isolation Kernel derived in a dense region. This characteristic is derived from data directly; and IK has no closed form expression and does not require learning. Isolation Kernel has three implementations using different isolation mechanisms up to 2021 [4,5,6]. IK has been shown to be the key in achieving large scale online kernel learning [7].
+ 
+In 2020, Isolation Distributional Kernel or IDK is introduced to measure the similarity of two distributions [6], based on the framework of kernel mean embedding [8]. The first application of IDK is a kernel-based point anomaly detector that needs no learning, unlike OCSVM [9]. Through IDK point anomaly detector, Isolation Forest is linked to a kernel-based method for the very first time. IDK has since been applied to group anomaly detection [10], graph classification via Isolation Graph Kernel [11], multi-instance learning [12]; and IDK can be interpreted as a kernel density estimator called Isolation Kernel Density Estimator [13].
+ 
 References
-----------
-
-[1] Kai Ming Ting, Yue Zhu, Zhi-Hua Zhou (2018). Isolation Kernel and Its Effect on SVM. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2329-2337.
-
-[2] Xiaoyu Qin, Kai Ming Ting, Ye Zhu and Vincent Cheng Siong Lee (2019). Nearest-Neighbour-Induced Isolation Similarity and Its Impact on Density-Based Clustering.  Proceedings of The Thirty-Third AAAI Conference on Artificial Intelligence. 4755-4762.
-
-[3] Bi-Cun Xu, Kai Ming Ting, Zhi-Hua Zhou (2019). Isolation Set-Kernel and Its Application to Multi-Instance Learning. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 941-949.
-
-[4] Kai Ming Ting, Jonathan R. Wells, Takashi Washio (2021). Isolation Kernel: The X Factor in Efficient and Effective Large Scale Online Kernel Learning. Data Mining and Knowledge Discovery. 
-
-[5] Kai Ming Ting, Bi-Cun Xu, Washio Takashi, Zhi-Hua Zhou (2020). Isolation Distributional Kernel: A new tool for kernel based anomaly detection. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 198-206.
-
-[6] Kai Ming Ting, Bi-Cun Xu, Washio Takashi, Zhi-Hua Zhou (2020). Isolation Distributional Kernel: A new tool for kernel based point and group anomaly detections. https://arxiv.org/abs/2009.12196.
-
-[7] Bi-Cun Xu, Kai Ming Ting, Yuan Jiang (2021). Isolation Graph Kernel. Proceedings of The Thirty-Fifth AAAI Conference on Artificial Intelligence.
-
-[8] Xin Han, Ye Zhu, Kai Ming Ting, Gang Li (2020). The Impact of Isolation Kernel on Agglomerative Hierarchical Clustering Algorithms. [CoRR abs/2010.05473](https://dblp.org/db/journals/corr/corr2010.html#abs-2010-05473)
-
-[9] Kai Ming Ting, Jonathan R. Wells, Ye Zhu (2020). Clustering based on Point-Set Kernel. [CoRR abs/2002.05815](https://dblp.org/db/journals/corr/corr2002.html#abs-2002-05815)
+[1] Fei Tony Liu, Kai Ming Ting, Zhi-Hua Zhou (2008) Isolation Forest. Proceedings of IEEE ICDM, 413-422.
+ 
+[2] Tharindu R. Bandaragoda, Kai Ming Ting, David Albrecht, Fei Tony Liu and Jonathan R. Wells (2018). Isolation-based Anomaly Detection using Nearest Neighbour Ensembles. Computational Intelligence. Doi:10.1111/coin.12156.
+ 
+[3] Kai Ming Ting, Guang-Tong Zhou. Fei Tony Liu and Swee Chuan Tan (2010). Mass Estimation and Its Applications. Proceedings of The 16th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 989-998.
+ 
+[4] Kai Ming Ting, Yue Zhu, Zhi-Hua Zhou (2018). Isolation Kernel and Its Effect on SVM. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2329-2337.
+[5] Xiaoyu Qin, Kai Ming Ting, Ye Zhu and Vincent Cheng Siong Lee (2019). Nearest-Neighbour-Induced Isolation Similarity and Its Impact on Density-Based Clustering. Proceedings of The Thirty-Third AAAI Conference on Artificial Intelligence. 4755-4762.
+[6] Kai Ming Ting, Bi-Cun Xu, Washio Takashi, Zhi-Hua Zhou (2020). Isolation Distributional Kernel: A new tool for kernel based anomaly detection. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 198-206.
+[7] Kai Ming Ting, Jonathan R. Wells, Takashi Washio (2021). Isolation Kernel: The X Factor in Efficient and Effective Large Scale Online Kernel Learning. Data Mining and Knowledge Discovery.
+[8] Alex Smola, Arthur Gretton, Le Song, and Bernhard Schölkopf. 2007. A Hilbert Space Embedding for Distributions. In Algorithmic Learning Theory, Marcus Hutter, Rocco A. Servedio, and Eiji Takimoto (Eds.). Springer, 13–31.
+[9] Bernhard Schölkopf, John C. Platt, John C. Shawe-Taylor, Alex J. Smola, and Robert C. Williamson. 2001. Estimating the Support of a High-Dimensional Distribution. Neural Computing 13, 7 (2001), 1443–1471.
+[10] Kai Ming Ting, Bi-Cun Xu, Washio Takashi, Zhi-Hua Zhou (2020). Isolation Distributional Kernel: A new tool for kernel based point and group anomaly detections. https://arxiv.org/abs/2009.12196.
+[11] Bi-Cun Xu, Kai Ming Ting, Yuan Jiang (2021). Isolation Graph Kernel. Proceedings of The Thirty-Fifth AAAI Conference on Artificial Intelligence. 10487-10495.
+[12] Bi-Cun Xu, Kai Ming Ting, Zhi-Hua Zhou (2019). Isolation Set-Kernel and Its Application to Multi-Instance Learning. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 941-949.
+ 
+[13]  Kai Ming Ting, Takashi Washio, Jonathan R. Wells, Hang Zhang (2021). Isolation Kernel Density Estimation. Proceedings of   IEEE ICDM.
