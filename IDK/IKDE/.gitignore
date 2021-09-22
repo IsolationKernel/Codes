@@ -1,0 +1,5 @@
+# Ignore all files in any directory named build (e.g., c++/build)
+build/
+
+# Ignore all Qt Creator pro.user files
+*.pro.user
