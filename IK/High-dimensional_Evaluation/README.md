@@ -1,4 +1,3 @@
-```markdown
 # Breaking the curse of dimensionality with Isolation Kernel
 
 This code for demonstration of using Isolation kernel to break the curse of dimensionality
