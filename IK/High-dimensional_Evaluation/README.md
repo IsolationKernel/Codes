@@ -6,7 +6,7 @@ Uploaded by Ye Zhu, Deakin University, Sep 2021, version 1.0.
 
 This software is under GNU General Public License version 3.0 (GPLv3)
 
-This code is a demo of method described by the following publication: Ting, K.M., Washio, T., Zhu, Y. and Xu, Y., 2021, July. Breaking the curse of dimensionality with Isolation Kernel.
+This code is a demo of method described by the following publication: Ting, K.M., Washio, T., Zhu, Y. and Xu, Y., 2021. Breaking the curse of dimensionality with Isolation Kernel.
 
 The following scripts can be used to reproduce the results in the paper:
 - testIR.m: the retrieval precision of 5 nearestneighbour as shown in Table 2
