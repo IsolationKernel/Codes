@@ -14,5 +14,3 @@ The following scripts can be used to reproduce the results in the table:
 - testclustering.m: Clustering evaluation results in Table 3
 - testTSNE.m: t-SNE visulaisation as shown Table 5 and Table 6
 - EstimateID.m: Estimated intrinsic dimensions as shown in Figure 3
-```
-
