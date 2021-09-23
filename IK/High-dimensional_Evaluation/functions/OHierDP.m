@@ -1,5 +1,6 @@
 function [ Z ] = OHierDP( SimMatrix,dc)
-% DP clustering algorithm with hierarchical outputs
+% original DP clustering algorithm with hierarchical outputs
+% Zhu, Y., Ting, K.M., Jin, Y. and Angelova, M., 2021, August. Hierarchical clustering that takes advantage of both density-peak and density-connectivity. Information Systems.
 
 NumIns=size(SimMatrix,2);
 Density=sum(SimMatrix'<=dc);

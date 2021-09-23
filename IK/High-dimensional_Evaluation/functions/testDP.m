@@ -1,5 +1,5 @@
 function [bf,ba] = testDP(data,class,SimMatrix)
-
+% search the best parameters for DP
 
 SimMatrix=SimMatrix./(max(max(SimMatrix)));
 SimMatrix=roundn(SimMatrix,-2);

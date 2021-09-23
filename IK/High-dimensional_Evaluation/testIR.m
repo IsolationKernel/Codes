@@ -1,7 +1,7 @@
 % the retrieval precision of 5 nearestneighbour as shown in Table 2
 
 clear
-load('wGaussians.mat')
+load('ijcnn.mat')
 k=5;
   
 % data=gpuArray(double(data));

@@ -1,6 +1,7 @@
 function [ndata] = SIKspace (Sdata,data, psi, t)
-% kernel space for data
-% Sdata is used for partition
+% generate Isolation kernel space for a given data
+% Sdata is used for sampling
+
 [sn,~]=size(Sdata);   
 [n,d]=size(data);   
 IDX=[]; 
