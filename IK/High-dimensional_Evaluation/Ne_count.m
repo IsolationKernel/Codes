@@ -1,7 +1,14 @@
 % Calculate N_e numbers under different distance measures and kernels as shown in Figure 1.
-
 clear
-load('data'); 
+load('Gaussians.mat');  % please unzip Gaussians under "Clustering and Indexing datasets"
+load('nGaussians.mat'); 
+
+% adding query points
+data(2000,:)=[];
+class(2000,:)=[];
+data=[data;nd]; 
+class=[class;nc];
+ 
 gscatter(data(:,1),data(:,2),class,'rgb');
 
 d=10000; % d=10 or 10000
