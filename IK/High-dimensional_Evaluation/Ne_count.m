@@ -1,4 +1,4 @@
-% Calculate N_e numbers under different distance measures and kernels as shown in Figure 1.
+% Calculate N_e numbers under different distance measures and kernels as shown in Figure 1（c）(d), Table 1 and Figure 4
 clear
 load('Gaussians.mat');  % please unzip Gaussians under "Clustering and Indexing datasets"
 load('nGaussians.mat'); 

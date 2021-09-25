@@ -10,7 +10,7 @@ This code is a demo of method described by the following publication: Ting, K.M.
 
 The following scripts can be used to reproduce the results in the paper:
 
-- Ne_count.m: Calculate N_e numbers under different distance measures and kernels as shown in Figure 1 (c) and (d)
+- Ne_count.m: Calculate N_e numbers under different distance measures and kernels as shown in Figure 1, 4 and Table 1.
 - VDM.m: Generating results for Figure 1 (b)
 - testIR.m: The retrieval precision of 5 nearest neighbour as shown in Table 2
 - testIndexing.ipynb: Brute force vs Ball tree index as shown in Table 2
