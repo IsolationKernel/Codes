@@ -19,10 +19,18 @@ libsvmwrite('IKdata.svm', class(1:size(ndata,1)), sparse(ndata)); % IK features
 %% Generating svm file for SVM classifiation
 
 
+
+cd classification_datasets % need to enter the folder to process libsvmread
+
+clear  
+[data, class] = libsvmread('a9a');
+
+
 tic
-psi=32; % best psi should be tuned for different datasets
+psi=8; % best psi should be tuned for different datasets
 t=200;
 [ndata] = IKspace (data,data, psi, t);
 toc
-libsvmwrite('IKdata.svm', class(1:size(ndata,1)), sparse(ndata)); % IK features
+
+libsvmwrite('IKa9a8', class, sparse(ndata)); % IK features
 
