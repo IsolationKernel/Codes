@@ -19,10 +19,11 @@ The following scripts can be used to reproduce the results in the paper:
 - EstimateID.m: Estimated intrinsic dimensions as shown in Figure 3
 - Hubness.m: Calculation for Figure5
 - IKtransformation.m: Transform the original data to IK feature space for indexing and SVM classification. 
+- SVMclassification.ipynb: SVM classification for Table 4
 
 
 
-Please unzip the datasets under "Clustering and Indexing datasets" before run these scripts. All datasets used for SVM classification in Table 4 are directly obtained from https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/. The script to read the original data in SVM format can be obtained from https://github.com/cjlin1/libsvm.
+Please unzip the datasets under "Clustering and Indexing datasets" before run these scripts. All datasets used for SVM classification in Table 4 can be directly obtained from https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/. The script to read the original data in SVM format can be obtained from https://github.com/cjlin1/libsvm.
 
 
 
