@@ -26,7 +26,6 @@ Please unzip the datasets under "Clustering and Indexing datasets" before runnin
 
 
 
-The codes for indexing search and SVM classification evaluation are implemented in Python, other tasks are based on Matlab. The LIBLINEAR package can be obtained from https://github.com/cjlin1/liblinear.
-
+The codes for indexing search and SVM classification evaluation are implemented in Python, other tasks are based on Matlab. 
 
 
