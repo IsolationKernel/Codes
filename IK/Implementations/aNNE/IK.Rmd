@@ -69,7 +69,7 @@ hmap(d, method = "OLO_single", main = "Heatmap for Lines (opt. leaf ordering)",
 ----------------
 
 
-### Clustering results based on Isolation Kerner 
+### Clustering results based on Isolation Kernel 
 
 Here is the implementation of Isolation kernel functions. IKFeature function will return the finite binary features based on the kernel feature map. IKSimilarity function calculates the similarity kernel measure. Therefore, we can use IKFeature for algorithms that require the features as an input (e.g., k-means), while use IKSimilarity for algorithms that require the similarity/dissimilarity matrix as an input (e.g., k-medoids).  
 
