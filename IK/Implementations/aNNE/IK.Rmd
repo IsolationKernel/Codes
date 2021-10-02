@@ -1,0 +1,173 @@
+---
+title: "Demonstration of Isolation Kernel"
+author: "Ye Zhu, Deakin University"
+date: "2021/10/1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+ 
+Different kernel methods have been developed to improve the performance of existing distance-based clustering algorithms such as kernel k-means and spectral clustering. Recently, the Isolation Kernel [1,2,3,4] has been proposed to be a more effective data-dependent similarity measure such that *two points in a sparse region are more similar than two points of equal inter-point distance in a dense region*. This measure is adaptive to local data distribution and has *more flexibility in capturing the characteristics of the local data distribution*. It has been shown promising performance on density and distance-based classification and clustering problems.
+
+In this document, we are going to explore effects of Isolation Kernel [1] on clustering iris dataset in R. We will compare k-means, k-medoids and heatmap between using Euclidean distance and using Isolation Kernel. Essential packages used in this report are RANN, aricode, Rcpp, seriation and kmed.
+ 
+### Iris data distribution
+We first visualise the original iris dataset:
+
+```{r echo=TRUE, warning=FALSE, message=FALSE}
+library(heatmaply)
+df <- iris
+df[,1:4] <- normalize(df[,1:4])
+ggplot(df, aes(Petal.Length, Petal.Width)) + geom_point(aes(col=Species), size=4)
+```
+
+
+----------------
+
+
+ 
+### Clustering results based on orginal data with Eucliean distance
+
+#### **K-means clustering**
+- The confusion matrix is
+```{r K-means clustering based on Euclidean distance, echo=TRUE, warning=FALSE}
+irisCluster <- kmeans(df[,1:4], center=3, nstart=100) 
+table(irisCluster$cluster, iris$Species)
+```
+
+- The AMI score is
+```{r echo=TRUE, warning=FALSE}
+library(aricode)
+AMI(irisCluster$cluster,iris$Species)
+```
+#### **K-means medoids clustering**
+- The confusion matrix is
+```{r K-medoids clustering based on IK, echo=TRUE, warning=FALSE}
+library(kmed)
+d <- dist(df[,1:4])  
+sfkm <- fastkmed(d, ncluster = 3, iterate = 100)
+table(sfkm$cluster, iris$Species)
+```
+
+- The AMI score is
+```{r echo=TRUE, warning=FALSE}
+AMI(sfkm$cluster,iris$Species)
+```
+
+
+#### **Heatmap**
+
+```{r Heatmap based on Euclidean distance, echo=TRUE}
+library(seriation)
+hmap(d, method = "OLO_single", main = "Heatmap for Lines (opt. leaf ordering)",
+  col = bluered(100, bias = .5))
+```
+
+
+----------------
+
+
+### Clustering results based on Isolation Kerner 
+
+Here is the implementation of Isolation kernel functions. IKFeature function will return the finite binary features based on the kernel feature map. IKSimilarity function calculates the similarity kernel measure. Therefore, we can use IKFeature for algorithms that require the features as an input (e.g., k-means), while use IKSimilarity for algorithms that require the similarity/dissimilarity matrix as an input (e.g., k-medoids).  
+
+```{r Isolation kernel functions, warning=FALSE, include=TRUE}
+library(RANN)
+library(Matrix)
+
+IKFeature <- function(data, Sdata=data, psi = 64, t = 200, Sp=TRUE) {
+# IKFeature function will return the finite binary features based on the kernel feature map. 
+  
+  # data is used for applying Isolation kernel function
+  # Sdata is the data use for generating Voronoi diagrams, it can be the same as the input data
+  # psi is the number of cells in each Voronoi diagram, it should be large if there are more clusters or more complex structures in the data
+  # t is the number of Voronoi diagrams, the higher the more stable the result
+  # Sp indicate whether return the sparse feature vectors
+  
+  
+  sizeS <- nrow(Sdata)
+  sizeN <- nrow(data)
+  Feature<-matrix(, nrow = sizeN, ncol = 0)
+  for (i in 1:t) {
+    subIndex <- sample(1:sizeS, psi, replace = FALSE, prob = NULL)
+    tdata <- Sdata[subIndex, ]
+    NN <- nn2(tdata, data, k = 1) # find the nearest negibour 
+    OneFeature <- matrix(0, nrow = sizeN, ncol = psi)
+    OneFeature <- Matrix(OneFeature, sparse=Sp)
+    ind <- cbind(1:sizeN,NN$nn.idx)
+    OneFeature[ind] <- 1 # update non-zero values
+    Feature<- cbind(Feature, OneFeature)
+  }
+  if (Sp == TRUE){ 
+  Feature # binary feature matrix based on Isolation kernel
+  }else{
+    as.matrix(Feature) # return full matrix
+  }
+}
+
+IKSimilarity <- function(data, Sdata=data, psi = 64, t = 200, Sp=TRUE) {
+# IKSimilarity function calculates the similarity kernel measure.
+  
+ Feature<-IKFeature(data, Sdata, psi, t, Sp)
+ SimMatrix <- Feature%*%t(Feature)/t # the similarity matrix based on Isolation kernel
+}
+ 
+```
+ 
+#### **K-means clustering**  
+- The confusion matrix is
+```{r K-means clustering based on IK, echo=TRUE, warning=FALSE}
+set.seed(136)
+ndata <- IKFeature(data=df[,1:4],psi=4,t=200) 
+irisCluster <- kmeans(ndata, center=3, nstart=100) 
+table(irisCluster$cluster, iris$Species)
+```
+
+
+- The AMI score is
+```{r echo=TRUE, warning=FALSE}
+AMI(irisCluster$cluster,iris$Species)
+```
+ 
+#### **K-medoids clustering**  
+- The confusion matrix is
+```{r K-medoids clustering based on Euclidean distance, echo=TRUE, warning=FALSE}
+library(kmed)
+set.seed(136)
+Sim <- IKSimilarity(df[,1:4],df[,1:4],4,200,FALSE)
+d <- 1-Sim # get the dissimilarity/distance matrix
+sfkm <- fastkmed(d, ncluster = 3, iterate = 100)
+table(sfkm$cluster, iris$Species)
+```
+
+- The AMI score is
+```{r echo=FALSE, warning=FALSE}
+AMI(sfkm$cluster,iris$Species)
+```
+  
+#### **Heatmap**
+
+```{r Heatmap based on IK, echo=TRUE}
+hmap(d, method = "OLO_single", main = "Heatmap for Lines (opt. leaf ordering)",
+  col = bluered(100, bias = .5))
+```
+
+
+Based on those results, we can see that Isolation kernel can improve the clustering results of both k-means and k-medoids. The cluster structure is also much clearer when using Isolation kernel.
+
+
+----------------
+
+#### Reference
+
+[1] Qin, X., Ting, K.M., Zhu, Y. and Lee, V.C., 2019, July. Nearest-neighbour-induced isolation similarity and its impact on density-based clustering. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 33, pp. 4755-4762).
+
+[2] Ting, K.M., Xu, B.C., Washio, T. and Zhou, Z.H., 2020, August. Isolation Distributional Kernel: A New Tool for Kernel based Anomaly Detection. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (pp. 198-206).
+
+[3] Ting, K.M., Wells, J.R. and Washio, T., 2021. Isolation kernel: the X factor in efficient and effective large scale online kernel learning. Data Mining and Knowledge Discovery, pp.1-31.
+
+[4] Ting, K.M., Zhu, Y. and Zhou, Z.H., 2018, July. Isolation kernel and its effect on SVM. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (pp. 2329-2337).
+ 
+ 
