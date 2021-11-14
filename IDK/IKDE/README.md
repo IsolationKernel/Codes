@@ -5,7 +5,7 @@ Papers
 ------
 
 * Point-Set Kernel Clustering
-* Isolation Kernel Density Estimation % empowered by Isolation Kernel and the first linear-time KDE-based anomaly detector
+* Isolation Kernel Density Estimation 
 * Isolation Kernel: The X Factor in Efficient and Effective Large Scale Online Kernel Learning
 
 
