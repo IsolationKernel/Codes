@@ -36,12 +36,12 @@ These source code releases are developed on an Arch Linux system. The GPU codes 
 
 The following tools are used during the develepment:
 
-* GCC      - v10.2.0
+* GCC      - v9.3.0
 * binutils - v2.35
 * make     - v4.3
 * qmake    - v3.1 (Just the qmake and related files)
 
-* CUDA - v10.2 (only if you have a Nvidia GPU card)
+* CUDA - v11.2 (only if you have a Nvidia GPU card)
 
 Note: You do not need any of the QT libraries (e.g., GUI or CLI). To install qmake, on the Arch Linux, install qt5-base package.
 
