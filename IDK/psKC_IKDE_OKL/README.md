@@ -1,5 +1,5 @@
-Isolation Kernel Based Algorithms
-=================================
+# Isolation Kernel Based Algorithms
+
 
 Papers
 ------
