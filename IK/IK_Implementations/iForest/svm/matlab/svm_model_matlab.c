@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include "svm.h"
-
 #include "mex.h"
 
 #ifdef MX_API_VER
