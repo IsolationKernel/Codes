@@ -39,7 +39,26 @@ class iNN_IK:
         ndata = csr_matrix((V, (IDR, IDX)), shape=(n, self.t * self.psi))
         return ndata
 
+    def fit(self, data):
+        self.data = data
+        self.centroid = []
+        self.centroids_radius = []
+        sn = self.data.shape[0]
+        for i in range(self.t):
+            subIndex = sample(range(sn), self.psi)
+            self.centroid.append(subIndex)
+            tdata = self.data[subIndex, :]
+            tt_dis = cdist(tdata, tdata)
+            radius = [] #restore centroids' radius
+            for r_idx in range(self.psi):
+                r = tt_dis[r_idx]
+                r[r<0] = 0
+                r = np.delete(r,r_idx)
+                radius.append(np.min(r))
+            self.centroids_radius.append(radius)
+
     def transform(self, newdata):
+        assert self.centroid != None, "invoke fit() first!"
         n, d = newdata.shape
         IDX = np.array([])
         V = []

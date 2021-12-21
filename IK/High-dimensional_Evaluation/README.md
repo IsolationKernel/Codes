@@ -28,4 +28,5 @@ Please unzip the datasets under "Clustering and Indexing datasets" before runnin
 
 The codes for indexing search and SVM classification evaluation are implemented in Python, other tasks are based on Matlab. 
 
-
+# References
+    Ting, K.M., Washio, T., Zhu, Y. and Xu, Y., 2021. Breaking the curse of dimensionality with Isolation Kernel.
