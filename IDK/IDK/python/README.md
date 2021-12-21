@@ -1,3 +1,10 @@
-IDKMap.py provides the api of IDK feature map based on inne and iforest.
+# Python version of IDK
+## IDK2.py
+    idk_square() : IDK group anomaly detector
+    idk_anomalyDetector() : IDK point anomaly detector
 
-Remember to add the path of iForest_boost.so when you use IK based on iforest.
+## iNNE_IK.py
+    This file contains the implemantation of Isolation Kernel based on iNNE.
+
+# References
+
