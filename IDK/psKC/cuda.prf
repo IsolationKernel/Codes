@@ -1,0 +1,41 @@
+###################################################################
+#                                                                 #
+# CUDA compiler                                                   #
+#                                                                 #
+# Target version: 10.2                                            #
+#                                                                 #
+# ref: https://github.com/Sunwinds/qmakecuda/blob/master/cuda.prf #
+#                                                                 #
+# Warning: This file is process after the *.pro has been parsed.  #
+#                                                                 #
+###################################################################
+
+CUDA_PATH = $$system(which nvcc | sed 's,/bin/nvcc$,,')
+
+isEmpty(CUDA_PATH) {
+  message("CUDA could not be found; therefore, using CPU for math computation.")
+}
+
+!isEmpty(CUDA_PATH) {
+  message("CUDA detected!")
+
+  system(nvcc --version | grep -e "11.1") {
+    message("Found version 11.1");
+
+    QMAKE_CXXFLAGS += -DIS_CUDA
+    QMAKE_LFLAGS = -lcublas
+
+    NVCC = $$CUDA_PATH/bin/nvcc -ccbin g++
+    NVCC_FLAGS += -m64  -gencode arch=compute_61,code=compute_61 -I$$root_dir/src/lib/include -I$$CUDA_PATH/samples/common/inc
+    QMAKE_LINK = $$NVCC
+
+    cuda.input = CUDA_SOURCES
+    cuda.output = ${QMAKE_VAR_OBJECTS_DIR}${QMAKE_FILE_BASE}.o
+    cuda.commands = $$NVCC $$NVCC_FLAGS -c ${QMAKE_FILE_NAME} -o ${QMAKE_FILE_OUT}
+    cuda.depend_command = $$NVCC $$NVCC_FLAGS -MMD ${QMAKE_FILE_NAME}
+    cuda.dependency_type = TYPE_C
+    QMAKE_EXTRA_COMPILERS += cuda
+  } else {
+    message("Unknown version; therefore, using CPU instead for math computation.")
+  }
+}

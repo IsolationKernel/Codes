@@ -1,0 +1,7 @@
+QMAKE_PRL_BUILD_DIR = /home/jonathan/research/feduni/mass/src/c++/IK/Codes/IDK/IKDE/build/src/lib
+QMAKE_PRO_INPUT = lib.pro
+QMAKE_PRL_TARGET = libml_debug.a
+QMAKE_PRL_CONFIG = lex yacc debug exceptions depend_includepath testcase_targets import_plugins import_qpa_plugin file_copies qmake_use warn_on link_prl incremental nostrip linux unix posix gcc debug DebugBuild Debug build_pass staticlib create_prl no_install_prl build_all debug_and_release debug_and_release_target cuda debug DebugBuild Debug build_pass have_target static staticlib no_plist exclusive_builds debug_info no_autoqmake
+QMAKE_PRL_VERSION = 1.0.0
+QMAKE_PRL_LIBS =
+QMAKE_PRL_LIBS_FOR_CMAKE = ;;;
