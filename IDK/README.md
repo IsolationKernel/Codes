@@ -1,8 +1,8 @@
-# IDK and Its Varieties
-    IDK: IDK point anomaly detector and IDK group anomaly detector[1]
-    IGK: Isolation Graph Kernel[2]
-    psKC: point-set Kernel Clustering[3]
-    IKDE: Isolation Kernel Density Esitimation[4]
+# IDK and its use in different applications 
+    IDK: IDK point anomaly detector and IDK group anomaly detector [1]
+    IGK: Isolation Graph Kernel [2]
+    psKC: point-set Kernel Clustering [3]
+    IKDE: Isolation Kernel Density Esitimation [4]
 
 # References
 
