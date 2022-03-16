@@ -44,4 +44,4 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 
 [14] Kai Ming Ting, Jonathan R. Wells, Ye Zhu (2022) Point-set Kernel Clustering. IEEE Transactions on Knowledge and Data Engineering.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Point-Set%20Kernel%20Clustering.pdf)
 
-[15] Ye Zhu, Kai Ming Ting (2021) Improving the Effectiveness and Efficiency of Stochastic Neighbour Embedding with Isolation Kernel. Journal of Artificial Intelligence Research 71, 667-695[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Improving%20the%20Effectiveness%20and%20Efficiency%20of%20Stochastic%20Neighbour%20Embedding%20with%20Isolation%20Kernel.pdf)
+[15] Ye Zhu, Kai Ming Ting (2021) Improving the Effectiveness and Efficiency of Stochastic Neighbour Embedding with Isolation Kernel. Journal of Artificial Intelligence Research 71, 667-695.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Improving%20the%20Effectiveness%20and%20Efficiency%20of%20Stochastic%20Neighbour%20Embedding%20with%20Isolation%20Kernel.pdf)
