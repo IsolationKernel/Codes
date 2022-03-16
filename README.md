@@ -22,7 +22,7 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 
 [3] Kai Ming Ting, Guang-Tong Zhou. Fei Tony Liu, Swee Chuan Tan (2010). Mass Estimation and Its Applications. Proceedings of The 16th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 989-998.
 
-[[4]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation%20Kernel%20and%20its%20effect%20on%20SVM.pdf) Kai Ming Ting, Yue Zhu, Zhi-Hua Zhou (2018). Isolation Kernel and Its Effect on SVM. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2329-2337.
+[4] Kai Ming Ting, Yue Zhu, Zhi-Hua Zhou (2018). Isolation Kernel and Its Effect on SVM. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2329-2337.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation%20Kernel%20and%20its%20effect%20on%20SVM.pdf)
 
 [5] Xiaoyu Qin, Kai Ming Ting, Ye Zhu, Vincent Cheng Siong Lee (2019). Nearest-Neighbour-Induced Isolation Similarity and Its Impact on Density-Based Clustering. Proceedings of The Thirty-Third AAAI Conference on Artificial Intelligence. 4755-4762.
 
