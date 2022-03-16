@@ -14,7 +14,7 @@ The following scripts can be used to reproduce the results reported in the paper
 - testIR.m: The retrieval precision of 5 nearest neighbour as shown in Table 2
 - testIndexing.ipynb: Brute force vs Ball tree index as shown in Table 2
 - testclustering.m: Clustering evaluation results in Table 3
-- testTSNE.m: t-SNE visulaisation as shown Table 5 and Table 6
+- testTSNE.m: t-SNE visulaisation as shown in Table 5 and Table 6
 - EstimateID.m: Estimated intrinsic dimensions as shown in Figure 3
 - Hubness.m: Calculation for Figure5
 - IKtransformation.m: Transform the original data to IK feature space for indexing and SVM classification. 
