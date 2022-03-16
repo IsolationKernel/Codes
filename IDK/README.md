@@ -12,4 +12,4 @@
 
 [3] Ting, Kai Ming, Jonathan R. Wells, and Ye Zhu. "Clustering based on Point-Set Kernel." To appear in IEEE IKDE (2022)
 
-[4] Kai Ming Ting, Takashi Washio, Jonathan R. Wells, Hang Zhang (2021). Isolation Kernel Density Estimation. Proceedings of IEEE ICDM.
+[4] Kai Ming Ting, Takashi Washio, Jonathan R. Wells, Hang Zhang (2021). Isolation Kernel Density Estimation. Proceedings of IEEE ICDM.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation_Kernel_Density_Estimation.pdf)
