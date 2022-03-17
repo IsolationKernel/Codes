@@ -18,7 +18,7 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 # References
 [1] Fei Tony Liu, Kai Ming Ting, Zhi-Hua Zhou (2008) Isolation Forest. Proceedings of IEEE ICDM, 413-422.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation%20Forest.pdf)
 
-[2] Tharindu R. Bandaragoda, Kai Ming Ting, David Albrecht, Fei Tony Liu, Jonathan R. Wells (2018). Isolation-based Anomaly Detection using Nearest Neighbour Ensembles. Computational Intelligence. Doi:10.1111/coin.12156.
+[2] Tharindu R. Bandaragoda, Kai Ming Ting, David Albrecht, Fei Tony Liu, Jonathan R. Wells (2018). Isolation-based Anomaly Detection using Nearest Neighbour Ensembles. Computational Intelligence. Doi:10.1111/coin.12156.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation-based%20Anomaly%20Detection%20using%20Nearest%20Neighbour%20Ensembles.pdf)
 
 [3] Kai Ming Ting, Guang-Tong Zhou. Fei Tony Liu, Swee Chuan Tan (2010). Mass Estimation and Its Applications. Proceedings of The 16th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 989-998.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Mass%20Estimation%20and%20Its%20Applications.pdf)
 
@@ -34,7 +34,7 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 
 [9] Bernhard Schölkopf, John C. Platt, John C. Shawe-Taylor, Alex J. Smola, Robert C. Williamson. 2001. Estimating the Support of a High-Dimensional Distribution. Neural Computing 13, 7 (2001), 1443–1471.
 
-[10] Kai Ming Ting, Bi-Cun Xu, Washio Takashi, Zhi-Hua Zhou (2022). Isolation Distributional Kernel: A new tool for kernel based point and group anomaly detections. IEEE Transactions on Knowledge and Data Engineering. ieeexplore.ieee.org/document/9573389
+[10] Kai Ming Ting, Bi-Cun Xu, Washio Takashi, Zhi-Hua Zhou (2022). Isolation Distributional Kernel: A new tool for kernel based point and group anomaly detections. IEEE Transactions on Knowledge and Data Engineering. ieeexplore.ieee.org/document/9573389[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation%20Distributional%20Kernel-A%20New%20Tool%20for%20point%20and%20group%20anomaly%20detection.pdf)
 
 [11] Bi-Cun Xu, Kai Ming Ting, Yuan Jiang (2021). Isolation Graph Kernel. Proceedings of The Thirty-Fifth AAAI Conference on Artificial Intelligence. 10487-10495.[[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/17255)
 
