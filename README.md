@@ -36,7 +36,7 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 
 [10] Kai Ming Ting, Bi-Cun Xu, Washio Takashi, Zhi-Hua Zhou (2022). Isolation Distributional Kernel: A new tool for kernel based point and group anomaly detections. IEEE Transactions on Knowledge and Data Engineering. ieeexplore.ieee.org/document/9573389
 
-[11] Bi-Cun Xu, Kai Ming Ting, Yuan Jiang (2021). Isolation Graph Kernel. Proceedings of The Thirty-Fifth AAAI Conference on Artificial Intelligence. 10487-10495.
+[11] Bi-Cun Xu, Kai Ming Ting, Yuan Jiang (2021). Isolation Graph Kernel. Proceedings of The Thirty-Fifth AAAI Conference on Artificial Intelligence. 10487-10495.[[link]](https://ojs.aaai.org/index.php/AAAI/article/view/17255)
 
 [12] Bi-Cun Xu, Kai Ming Ting, Zhi-Hua Zhou (2019). Isolation Set-Kernel and Its Application to Multi-Instance Learning. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 941-949.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation%20Set-Kernel%20and%20Its%20Application%20to%20Multi-Instance%20Learning.pdf)
 
