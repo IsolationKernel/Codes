@@ -26,4 +26,5 @@
     The original OGD software is rather fragile. For example, if the number of data points within a data file is a multiple of 256, then the program could crash. I haven't attempted to supply any fixes to the original software.
 
 # References
-    Ting, Kai Ming, Jonathan R. Wells, and Takashi Washio. "Isolation kernel: the X factor in efficient and effective large scale online kernel learning." Data Mining and Knowledge Discovery 35.6 (2021): 2282-2312.
+
+Ting, Kai Ming, Jonathan R. Wells, and Takashi Washio. "Isolation kernel: the X factor in efficient and effective large scale online kernel learning." Data Mining and Knowledge Discovery 35.6 (2021): 2282-2312.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation%20Kernel-The%20X%20Factor%20in%20Efficient%20and%20Effective%20Large%20Scale%20Online%20Kernel%20Learning.pdf)
