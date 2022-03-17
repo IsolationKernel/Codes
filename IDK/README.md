@@ -10,6 +10,6 @@ IKDE: Isolation Kernel Density Esitimation [4]
 
 [2] Xu, Bi-Cun, Kai Ming Ting, and Yuan Jiang. "Isolation Graph Kernel." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 35. No. 12. 2021.[[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/17255)
 
-[3] Ting, Kai Ming, Jonathan R. Wells, and Ye Zhu. "Clustering based on Point-Set Kernel." To appear in IEEE IKDE (2022)
+[3] Ting, K. M., Wells, J. R., & Zhu, Y. (2022). Point-Set Kernel Clustering. IEEE Transactions on Knowledge and Data Engineering.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Point-Set%20Kernel%20Clustering.pdf)
 
 [4] Kai Ming Ting, Takashi Washio, Jonathan R. Wells, Hang Zhang (2021). Isolation Kernel Density Estimation. Proceedings of IEEE ICDM.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation_Kernel_Density_Estimation.pdf)
