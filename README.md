@@ -50,5 +50,7 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 [14] Kai Ming Ting, Jonathan R. Wells, Ye Zhu (2022) Point-set Kernel Clustering. IEEE Transactions on Knowledge and Data Engineering.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Point-Set%20Kernel%20Clustering.pdf)
 
 [15] Ye Zhu, Kai Ming Ting (2021) Improving the Effectiveness and Efficiency of Stochastic Neighbour Embedding with Isolation Kernel. Journal of Artificial Intelligence Research 71, 667-695.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Improving%20the%20Effectiveness%20and%20Efficiency%20of%20Stochastic%20Neighbour%20Embedding%20with%20Isolation%20Kernel.pdf)
+
 [16] Xin Han, Ye Zhu, Kai Ming Ting, De-Chuan Zhan, Gnag Li (2022) Streaming Hierarchical Clustering Based on Point-Set Kernel. To appear in Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining.
+
 [17] Kai Ming Ting, Zongyou Liu, Hang Zhang, Ye Zhu (2002) A New Distributional Treatment for Time Series and An Anomaly Detection Investigation. To appear in Proceedings of The Very Large Data Bases (VLDB) Conference.
