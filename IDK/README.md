@@ -1,8 +1,13 @@
 # IDK and its use in different applications 
 IDK: IDK point anomaly detector and IDK group anomaly detector [1]
+
 IGK: Isolation Graph Kernel [2]
+
 psKC: point-set Kernel Clustering [3]
+
 IKDE: Isolation Kernel Density Esitimation [4]
+
+TS: Anomaly Detection for Time Series [5]
 
 # References
 
@@ -13,3 +18,5 @@ IKDE: Isolation Kernel Density Esitimation [4]
 [3] Ting, K. M., Wells, J. R., & Zhu, Y. (2022). Point-Set Kernel Clustering. IEEE Transactions on Knowledge and Data Engineering.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Point-Set%20Kernel%20Clustering.pdf)
 
 [4] Kai Ming Ting, Takashi Washio, Jonathan R. Wells, Hang Zhang (2021). Isolation Kernel Density Estimation. Proceedings of IEEE ICDM.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation_Kernel_Density_Estimation.pdf)
+
+[5] Kai Ming Ting, Zongyou Liu, Hang Zhang and Ye Zhu. A New Distributional Treatment for Time Series and An Anomaly Detection Investigation. PVLDB, 15(11).
