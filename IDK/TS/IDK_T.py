@@ -32,20 +32,7 @@ def IDK_T(X, psi1,width,psi2,t=100):
         tem2 =np.dot(np.ones(X.shape),np.square(sample.T))
         point2sample = tem1 + tem2 - 2 * np.dot(X, sample.T) #n*psi
         min_dist_point2sample=np.argmin(point2sample,axis=1)#index
-        #min_dist_point2sample_val = np.argmin(point2sample, axis=1)
 
-
-        # map all points
-        # for i in range(X.shape[0]):
-        #     for j in range(len(sample_list)):
-        #         if distance_matrix[i][sample_list[j]] < radius_list[j]:
-        #             if onepoint_matrix[i][time] == -1:
-        #                 onepoint_matrix[i][time] = j + time * psi
-        #             elif distance_matrix[i][sample_list[j]] < distance_matrix[i][
-        #                 sample_list[onepoint_matrix[i][time] - time * psi]]:
-        #                 onepoint_matrix[i][time] = j + time * psi
-        #     if onepoint_matrix[i][time] != -1:
-        #         featuremap_count[onepoint_matrix[i][time]] += 1
         for i in range(X.shape[0]):
             if point2sample[i][min_dist_point2sample[i]] < radius_list[min_dist_point2sample[i]]:
                 onepoint_matrix[i][time]=min_dist_point2sample[i]+time*psi1
