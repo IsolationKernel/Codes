@@ -53,4 +53,4 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 
 [16] Xin Han, Ye Zhu, Kai Ming Ting, De-Chuan Zhan, Gnag Li (2022) Streaming Hierarchical Clustering Based on Point-Set Kernel. To appear in Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining.
 
-[17] Kai Ming Ting, Zongyou Liu, Hang Zhang, Ye Zhu (2002) A New Distributional Treatment for Time Series and An Anomaly Detection Investigation. To appear in Proceedings of The Very Large Data Bases (VLDB) Conference.
+[17] Kai Ming Ting, Zongyou Liu, Hang Zhang, Ye Zhu (2022) A New Distributional Treatment for Time Series and An Anomaly Detection Investigation. To appear in Proceedings of The Very Large Data Bases (VLDB) Conference.
