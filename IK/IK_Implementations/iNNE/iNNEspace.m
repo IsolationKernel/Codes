@@ -20,7 +20,7 @@ for i = 1:t
     
     [~,IA,~] = unique(Ndata,'rows'); 
     NCurtIndex=CurtIndex(IA);
-    Ndata = data(NCurtIndex,:);
+    Ndata = Sdata(NCurtIndex,:);
     
     % radius
     [D,~] = pdist2(Ndata,Ndata,'minkowski',2,'Smallest',2);    
