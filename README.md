@@ -16,7 +16,7 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 * Group anomaly detection [10], graph classification via Isolation Graph Kernel [11], multi-instance learning [12]. 
 * IDK can be interpreted as a kernel density estimator called Isolation Kernel Density Estimator [13]. 
 * A new class of clustering algorithm called psKC (or point-set Kernel Clustering) [14]. Up to early 2022, psKC is the only clustering algorithm which is both effective and efficient---a quality which is all but nonexistent in current clustering algorithms. It is also the only kernel-based clustering which has linear time complexity.
-* A new class of online Aggregomerative Hierarchical Clustering [16] that makes use of the idea of point-set kernel.
+* A new class of online Agglomerative Hierarchical Clustering [16] that makes use of the idea of point-set kernel.
 * A new treatment for timeseries [17]. This is a paradigm shift from the time domain and frequency domain approaches that have been around for more than 100 years.
 
 
