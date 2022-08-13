@@ -13,7 +13,7 @@ An example of applying IDK-based methods for anomalous subsequence detection on 
 - scikit-learn
 
 ## Example
-```
+```python
 # Read data
 X=np.array(pd.read_csv("Discords_Data/noisy_sine.txt",header=None)).reshape(-1,1)
 cycle=300
@@ -29,7 +29,8 @@ similarity_score=IDK_T(X,t=100,psi1=16,width=cycle,psi2=2)
 
 # IDK square using a sliding window. The input series can be periodic or aperiodic time series showing recurring normal subsequences.
 # The length of the sliding window needs to be searched and the search range we use is provided in the paper.
-# return the similarity score for each subsequence of time series extracted by a sliding window. Anomalous subsequences are those having lowest similaity scores.
+# return the similarity score for each subsequence of time series extracted by a sliding window. 
+# Anomalous subsequences are those having lowest similaity scores.
 w=cycle-50
 sliding_score=IDK_square_sliding(X,t=100,psi1=4,width=w,psi2=4)
 ```
