@@ -14,13 +14,14 @@ An example of applying IDK-based methods for anomalous subsequence detection on 
 
 ## Example
 ```python
-# Read data
+# Read data. 
+# The period length (cycle) of each time series and the locations of anomalous period subsequences are given in the appendix of the paper.
 X=np.array(pd.read_csv("Discords_Data/noisy_sine.txt",header=None)).reshape(-1,1)
 cycle=300
 
 
 # IDK square using non-overlapping windows. The input series should have single or multiple periodicity.
-# The period(cycle) length of the time series needs to be input. 
+# The period length (cycle) of the time series needs to be input. 
 # The number of partitionings t is 100 by default. The sample sizes psi1 and psi2 for two levels of IK mappings need to be searched
 # and the search range we use is provided in the paper.
 # Return the similarity score for each period of time series. Anomalous period subsequences are those having lowest similaity scores.
