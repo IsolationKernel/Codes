@@ -23,13 +23,13 @@ cycle=300
 # The period(cycle) length of the time series needs to be input. 
 # The number of partitionings t is 100 by default. The sample sizes psi1 and psi2 for two levels of IK mappings need to be searched
 # and the search range we use is provided in the paper.
-# return the similarity score for each period of time series. Anomalous period subsequences are those having lowest similaity scores.
+# Return the similarity score for each period of time series. Anomalous period subsequences are those having lowest similaity scores.
 similarity_score=IDK_T(X,t=100,psi1=16,width=cycle,psi2=2)
 
 
 # IDK square using a sliding window. The input series can be periodic or aperiodic time series showing recurring normal subsequences.
 # The length of the sliding window needs to be searched and the search range we use is provided in the paper.
-# return the similarity score for each subsequence of time series extracted by a sliding window. 
+# Return the similarity score for each subsequence of time series extracted by a sliding window. 
 # Anomalous subsequences are those having lowest similaity scores.
 w=cycle-50
 sliding_score=IDK_square_sliding(X,t=100,psi1=4,width=w,psi2=4)
