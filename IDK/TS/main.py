@@ -7,13 +7,14 @@ from IDK_square_sliding import IDK_square_sliding
 from Utilities import prepocessSubsequence, get_label, get_scoreCycleList_from_sliding, plotTS
 
 if __name__ == '__main__':
+    # The period length (cycle) of each time series and the locations of anomalous period subsequences are given in the appendix of the paper.
     X=np.array(pd.read_csv("Discords_Data/noisy_sine.txt",header=None)).reshape(-1,1)
     cycle=300
     anomaly_cycles=[5,10,20,30]
     ground_truth = get_label(X, cycle, anomaly_cycles)
     plotTS(X,cycle=cycle,anomaly_cycles=anomaly_cycles)
 
-    #subsequence z-score
+    # subsequence z-score
     #X=prepocessSubsequence(X,cycle)
 
     # IDK square using non-overlapping windows
