@@ -8,6 +8,12 @@ s-IDK$^2$ are implemented in Python and can be found in **IDK_T.py** and **IDK_s
 An example of applying IDK-based methods for anomalous subsequence detection on the time series noisy_sine is provided in **main.py**. Please unzip the file Discords_Data.zip and run **main.py** for the result.
 
 ## Requirements
+- numpy
+- pandas
+- scikit-learn
+
+
+
 
 ## Reference
 Kai Ming Ting, Zongyou Liu, Hang Zhang and Ye Zhu. A New Distributional Treatment for Time Series and An Anomaly Detection Investigation. PVLDB, 15(11).
