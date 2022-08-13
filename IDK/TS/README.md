@@ -13,7 +13,14 @@ An example of applying IDK-based methods for anomalous subsequence detection on 
 - scikit-learn
 
 ## Example
+
 ```python
+import numpy as np
+import pandas as pd
+from IDK_T import IDK_T
+from IDK_square_sliding import IDK_square_sliding
+
+
 # Read data. 
 # The period length (cycle) of each time series and the locations of anomalous period subsequences are given in the appendix of the paper.
 X=np.array(pd.read_csv("Discords_Data/noisy_sine.txt",header=None)).reshape(-1,1)
