@@ -31,7 +31,7 @@ cycle=300
 # The period length (cycle) of the time series needs to be input. 
 # The number of partitionings t is 100 by default. The sample sizes psi1 and psi2 for two levels of IK mappings need to be searched
 # and the search range we use is provided in the paper.
-# Return a list of similarity score for each period of time series. Anomalous period subsequences are those having the lowest similaity scores.
+# Return a list of similarity scores for each period of time series. Anomalous period subsequences are those having the lowest similarity scores.
 similarity_score=IDK_T(X,t=100,psi1=16,width=cycle,psi2=2)
 
 
