@@ -3,6 +3,8 @@
      - High-dimentional_Evaluation: codes of paper[1]
      - IK_Implementations: Isolation Kernel implementations based on iForest[2], aNNE[3] and iNNE[4]
      - IK_OGD: codes of paper[5]
+     - IK_TSNE: codes of paper[6]
+     - StreaKHC: codes of paper[7]
 
 # References
 [1] Ting, Kai Ming, et al. "Breaking the curse of dimensionality with Isolation Kernel." arXiv preprint arXiv:2109.14198 (2021).[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Breaking%20the%20curse%20of%20dimensionality%20with%20Isolation%20Kernel.pdf)
@@ -15,4 +17,6 @@
 
 [5] Ting, Kai Ming, Jonathan R. Wells, and Takashi Washio. "Isolation kernel: the X factor in efficient and effective large scale online kernel learning." Data Mining and Knowledge Discovery 35.6 (2021): 2282-2312.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation%20Kernel-The%20X%20Factor%20in%20Efficient%20and%20Effective%20Large%20Scale%20Online%20Kernel%20Learning.pdf)
 
-[6] Xin Han, Ye Zhu, Kai Ming Ting, De-Chuan Zhan, Gang Li (2022) Streaming Hierarchical Clustering Based on Point-Set Kernel. In Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining.[[pdf]](https://dl.acm.org/doi/abs/10.1145/3534678.3539323)
+[6] Zhu, Y. and Ting, K.M., 2021, July. Improving the Effectiveness and Efficiency of Stochastic Neighbour Embedding with Isolation Kernel. Journal of Artificial Intelligence Research.[[pdf]](https://jair.org/index.php/jair/article/view/12904)
+
+[7] Xin Han, Ye Zhu, Kai Ming Ting, De-Chuan Zhan, Gang Li (2022) Streaming Hierarchical Clustering Based on Point-Set Kernel. In Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining.[[pdf]](https://dl.acm.org/doi/abs/10.1145/3534678.3539323)
