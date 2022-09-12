@@ -14,3 +14,5 @@
 [4] Ting, Kai Ming, et al. "Isolation Distributional Kernel: A New Tool for Kernel based Anomaly Detection." Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. 2020.[[pdf]](https://doi.org/10.1145/3394486.3403062)
 
 [5] Ting, Kai Ming, Jonathan R. Wells, and Takashi Washio. "Isolation kernel: the X factor in efficient and effective large scale online kernel learning." Data Mining and Knowledge Discovery 35.6 (2021): 2282-2312.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation%20Kernel-The%20X%20Factor%20in%20Efficient%20and%20Effective%20Large%20Scale%20Online%20Kernel%20Learning.pdf)
+
+[6] Xin Han, Ye Zhu, Kai Ming Ting, De-Chuan Zhan, Gang Li (2022) Streaming Hierarchical Clustering Based on Point-Set Kernel. In Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining.[[pdf]](https://https://dl.acm.org/doi/abs/10.1145/3534678.3539323)
