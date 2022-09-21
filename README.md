@@ -23,7 +23,7 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 # References
 [1] Fei Tony Liu, Kai Ming Ting, Zhi-Hua Zhou (2008) Isolation Forest. Proceedings of IEEE ICDM, 413-422.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation%20Forest.pdf)
 
-[2] Tharindu R. Bandaragoda, Kai Ming Ting, David Albrecht, Fei Tony Liu, Jonathan R. Wells (2018). Isolation-based Anomaly Detection using Nearest Neighbour Ensembles. Computational Intelligence. Doi:10.1111/coin.12156.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation-based%20Anomaly%20Detection%20using%20Nearest%20Neighbour%20Ensembles.pdf)
+[2] Tharindu R. Bandaragoda, Kai Ming Ting, David Albrecht, Fei Tony Liu, Ye Zhu, Jonathan R. Wells (2018). Isolation-based Anomaly Detection using Nearest Neighbour Ensembles. Computational Intelligence. Doi:10.1111/coin.12156.[[pdf]](https://www.researchgate.net/publication/322359651_Isolation-based_anomaly_detection_using_nearest-neighbor_ensembles_iNNE)
 
 [3] Kai Ming Ting, Guang-Tong Zhou. Fei Tony Liu, Swee Chuan Tan (2010). Mass Estimation and Its Applications. Proceedings of The 16th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 989-998.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Mass%20Estimation%20and%20Its%20Applications.pdf)
 
@@ -51,6 +51,6 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 
 [15] Ye Zhu, Kai Ming Ting (2021) Improving the Effectiveness and Efficiency of Stochastic Neighbour Embedding with Isolation Kernel. Journal of Artificial Intelligence Research 71, 667-695.[[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Improving%20the%20Effectiveness%20and%20Efficiency%20of%20Stochastic%20Neighbour%20Embedding%20with%20Isolation%20Kernel.pdf)
 
-[16] Xin Han, Ye Zhu, Kai Ming Ting, De-Chuan Zhan, Gang Li (2022) Streaming Hierarchical Clustering Based on Point-Set Kernel. To appear in Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining.
+[16] Xin Han, Ye Zhu, Kai Ming Ting, De-Chuan Zhan, Gang Li (2022) Streaming Hierarchical Clustering Based on Point-Set Kernel. To appear in Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. [[pdf]](https://www.researchsquare.com/article/rs-1711503/v1.pdf)
 
-[17] Kai Ming Ting, Zongyou Liu, Hang Zhang, Ye Zhu (2022) A New Distributional Treatment for Time Series and An Anomaly Detection Investigation. To appear in Proceedings of The Very Large Data Bases (VLDB) Conference.
+[17] Kai Ming Ting, Zongyou Liu, Hang Zhang, Ye Zhu (2022) A New Distributional Treatment for Time Series and An Anomaly Detection Investigation. To appear in Proceedings of The Very Large Data Bases (VLDB) Conference. [[pdf]](https://www.vldb.org/pvldb/vol15/p2321-liu.pdf)
