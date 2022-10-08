@@ -16,9 +16,9 @@ def IK_inne_fm(X,psi,t=100):
         tem2 = np.dot(np.ones(X.shape), np.square(sample.T))
         point2sample = tem1 + tem2 - 2 * np.dot(X, sample.T)  # n*psi
 
-        tem = np.dot(np.square(sample), np.ones(sample.T.shape))
-        sample2sample = tem + tem.T - 2 * np.dot(sample, sample.T)
-        sample2sample[sample2sample < 1e-9] = 99999999;
+        sample2sample = point2sample[sample_list, :]
+        row, col = np.diag_indices_from(sample2sample)
+        sample2sample[row, col] = 99999999
         radius_list = np.min(sample2sample, axis=1)
 
         min_point2sample_index=np.argmin(point2sample, axis=1)
