@@ -9,7 +9,7 @@ structure of this project:
     codes:
         -- Algorithm1: source code of algorithm1
         -- Algorithm2: source code of algorithm2
-        -- Algorithm2: source code of algorithm3
+        -- Algorithm3: source code of algorithm3
         preprocess: read and preprocess data.
 
 This code is a demo of method described by the following publication:
