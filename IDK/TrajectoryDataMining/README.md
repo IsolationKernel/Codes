@@ -1,7 +1,7 @@
 This project contains source codes of Algorithm1 and Algorithm2 implemented
 by IDK and all datasets in our experiments.
 
-structure of this project:
+Structure of this project:
 
     datasets:
         Data2: six datasets used in previous studies.
