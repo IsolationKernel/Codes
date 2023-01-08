@@ -16,8 +16,6 @@ scipy
 scikit-learn
 ```
 
-### Input Format
-
 ### Get start
 
 Run the code with the following command.
