@@ -45,9 +45,9 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 
 [12] Bi-Cun Xu, Kai Ming Ting, Zhi-Hua Zhou (2019). Isolation Set-Kernel and Its Application to Multi-Instance Learning. Proceedings of The ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 941-949. [[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation%20Set-Kernel%20and%20Its%20Application%20to%20Multi-Instance%20Learning.pdf)
 
-[13]  Kai Ming Ting, Takashi Washio, Jonathan R. Wells, Hang Zhang (2021). Isolation Kernel Density Estimation. Proceedings of IEEE ICDM. [[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation_Kernel_Density_Estimation.pdf)
+[13]  Kai Ming Ting, Takashi Washio, Jonathan R. Wells, Hang Zhang (2021). Isolation Kernel Density Estimation. Proceedings of IEEE ICDM. 619-628 [[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Isolation_Kernel_Density_Estimation.pdf)
 
-[14] Kai Ming Ting, Jonathan R. Wells, Ye Zhu (2022) Point-set Kernel Clustering. IEEE Transactions on Knowledge and Data Engineering. [[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Point-Set%20Kernel%20Clustering.pdf)
+[14] Kai Ming Ting, Jonathan R. Wells, Ye Zhu (2023) Point-set Kernel Clustering. IEEE Transactions on Knowledge and Data Engineering. Vol.35, 5147-5158 [[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Point-Set%20Kernel%20Clustering.pdf)
 
 [15] Ye Zhu, Kai Ming Ting (2021) Improving the Effectiveness and Efficiency of Stochastic Neighbour Embedding with Isolation Kernel. Journal of Artificial Intelligence Research 71, 667-695. [[pdf]](https://github.com/IsolationKernel/Codes/blob/main/PDF/Improving%20the%20Effectiveness%20and%20Efficiency%20of%20Stochastic%20Neighbour%20Embedding%20with%20Isolation%20Kernel.pdf)
 
@@ -55,7 +55,7 @@ In 2020, Isolation Distributional Kernel or IDK is introduced to measure the sim
 
 [17] Kai Ming Ting, Zongyou Liu, Hang Zhang, Ye Zhu (2022) A New Distributional Treatment for Time Series and An Anomaly Detection Investigation. To appear in Proceedings of The Very Large Data Bases (VLDB) Conference. [[pdf]](https://www.vldb.org/pvldb/vol15/p2321-liu.pdf)
 
-[18] Zhong Zhuang, Kai Ming Ting, Guansong Pang, Shuaibin Song (2023). Subgraph Centralization: A Necessary Step for Graph Anomaly Detection. To appear in SIAM Conference on Data Mining. 
+[18] Zhong Zhuang, Kai Ming Ting, Guansong Pang, Shuaibin Song (2023). Subgraph Centralization: A Necessary Step for Graph Anomaly Detection. SIAM Conference on Data Mining. 
 
 [19] Ye Zhu, Kai Ming Ting (2023).  Kernel-based Clustering via Isolation Distributional Kernel. Information Systems.
 
