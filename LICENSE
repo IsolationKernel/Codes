@@ -1,8 +1,19 @@
-One of the primary goals of academic researchers is to advance the state-of-the-art in their fields of endeavor. This is done through sharing their results with their peers, who will evaluate the merits of the works and build upon them in future research. Therefore, it is important for academic researchers who write original source code to be able to share their code with their peers. However, sometimes this source code can have commercial value. Revenue generated from licensing the code benefits the researcher and her lab as well as the university, which is able to reinvest that money into new research projects and resources.
-The Non-Commercial Use License addresses the former group who will use the source code for non-commercial purposes only. To obtain a commercial license, please contact the Office of Science and Technology Administration, Nanjing University by emailing Feng Tang (tangfeng@nju.edu.cn).
+One of the primary goals of academic researchers is to advance the state-of-the-art in their fields of endeavor. 
+This is done through sharing their results with their peers, who will evaluate the merits of the works and build upon them in future research. 
+Therefore, it is important for academic researchers who write original source code to be able to share their code with their peers.
+However, sometimes this source code can have commercial value. Revenue generated from licensing the code benefits the researcher and her lab as well as the university, which is able to reinvest that money into new research projects and resources.
+The Non-Commercial Use License addresses the former group who will use the source code for non-commercial purposes only. 
+To obtain a commercial license, please contact the Office of Science and Technology Administration, Nanjing University by emailing Feng Tang (tangfeng@nju.edu.cn).
+
 TERMS AND CONDITIONS
+
 Copyright [2020] [Kai Ming Ting]
+
 You may use, copy, modify, and distribute [Isolation Kernel & Isolation Distributional Kernel] (“Software”) for non-commercial purposes only. Non-commercial purposes include, but aren’t limited to, teaching and conducting research at educational and non-profit institutions, and personal non-profit use.
+
 A commercial license may be sought by contacting Nanjing University at the email address given in the Preamble.
-Copies, modifications, and derivative works of the Software will be subject to the same terms and conditions herein. The above copyright notice and disclaimer of warranty below must be included in any distributions of the Software and its modified and derivative works, and a copy of this license must be provided to licensees.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Copies, modifications, and derivative works of the Software will be subject to the same terms and conditions herein. 
+The above copyright notice and disclaimer of warranty below must be included in any distributions of the Software and its modified and derivative works, and a copy of this license must be provided to licensees.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
